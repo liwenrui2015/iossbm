@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -73,7 +73,7 @@
                             <constraint firstAttribute="width" constant="30" id="x4C-OW-L0w"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" tag="1002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="联系客服：4008-811-6618" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3p-ha-HGk">
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系客服：4008-811-6618" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3p-ha-HGk">
                         <rect key="frame" x="58" y="14" width="204" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -238,12 +238,12 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="aboutus.png" width="55" height="55"/>
-        <image name="call_tell.png" width="53" height="53"/>
-        <image name="feeback.png" width="55" height="55"/>
-        <image name="game.png" width="61" height="61"/>
-        <image name="join.png" width="55" height="55"/>
-        <image name="line_blow.png" width="61" height="61"/>
+        <image name="aboutus.png" width="60" height="60"/>
+        <image name="call_tell.png" width="60" height="60"/>
+        <image name="feeback.png" width="60" height="60"/>
+        <image name="game.png" width="60" height="60"/>
+        <image name="join.png" width="60" height="60"/>
+        <image name="line_blow.png" width="60" height="60"/>
         <image name="login_bg.jpg" width="320" height="226"/>
     </resources>
 </document>

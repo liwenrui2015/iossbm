@@ -156,10 +156,6 @@ static NSString * DesCommentCell =@"DesCommentCell";
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
--(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
-{
-    return 44;
-}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -41,6 +41,7 @@ static NSString * CollectIdentifDesigner=@"CollectCellDesig";
     
     self.collectWorks=[[NSMutableArray alloc]init];
     self.collectShops=[[NSMutableArray alloc]init];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStyleDone target:self action:@selector(tableViewEdit:)];
     
     NSString * path =[NSString stringWithFormat:@"%@selectCoupons?",IP];
     NSDictionary * parsms =@{@"userId":[[NSUserDefaults standardUserDefaults]objectForKey:UserLoginName]};
@@ -160,7 +161,21 @@ static NSString * CollectIdentifDesigner=@"CollectCellDesig";
     
     
 }
-
+-(void)tableViewEdit:(id)seder
+{
+    if(self.collectTableView.editing==YES)
+    {
+        [self.navigationItem.rightBarButtonItem setTitle:@"编辑"];
+        
+        [self.collectTableView setEditing:NO animated:YES];
+    }
+    else
+    {
+        [self.navigationItem.rightBarButtonItem setTitle:@"取消编辑"];
+        [self.collectTableView setEditing:YES animated:YES];
+    }
+    
+}
 
 
 // Override to support conditional editing of the table view.

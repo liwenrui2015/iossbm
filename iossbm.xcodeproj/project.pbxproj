@@ -54,6 +54,10 @@
 		18C22D1A1BEB4ECC00BC10DA /* tabbar_item_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C22D121BEB4ECC00BC10DA /* tabbar_item_selected@2x.png */; };
 		18C22D1B1BEB4ECC00BC10DA /* tabbar_item_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C22D131BEB4ECC00BC10DA /* tabbar_item_store.png */; };
 		18C22D1C1BEB4ECC00BC10DA /* tabbar_item_store@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C22D141BEB4ECC00BC10DA /* tabbar_item_store@2x.png */; };
+		18C8FCDE1C11B9F8004A86A1 /* LineLowColleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8FCDC1C11B9F8004A86A1 /* LineLowColleController.m */; };
+		18C8FCDF1C11B9F8004A86A1 /* LineLowColleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C8FCDD1C11B9F8004A86A1 /* LineLowColleController.xib */; };
+		18C8FCE31C11BA41004A86A1 /* LineLowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8FCE11C11BA41004A86A1 /* LineLowCell.m */; };
+		18C8FCE41C11BA41004A86A1 /* LineLowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C8FCE21C11BA41004A86A1 /* LineLowCell.xib */; };
 		18F28ED61C07F327001FB5E2 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F28ED41C07F327001FB5E2 /* libcrypto.a */; };
 		18F28ED71C07F327001FB5E2 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F28ED51C07F327001FB5E2 /* libssl.a */; };
 		710817681BFC674C001B1B6C /* DetailedMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 710817671BFC674C001B1B6C /* DetailedMode.m */; };
@@ -416,6 +420,12 @@
 		18C22D121BEB4ECC00BC10DA /* tabbar_item_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_item_selected@2x.png"; sourceTree = "<group>"; };
 		18C22D131BEB4ECC00BC10DA /* tabbar_item_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_item_store.png; sourceTree = "<group>"; };
 		18C22D141BEB4ECC00BC10DA /* tabbar_item_store@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_item_store@2x.png"; sourceTree = "<group>"; };
+		18C8FCDB1C11B9F8004A86A1 /* LineLowColleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLowColleController.h; sourceTree = "<group>"; };
+		18C8FCDC1C11B9F8004A86A1 /* LineLowColleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLowColleController.m; sourceTree = "<group>"; };
+		18C8FCDD1C11B9F8004A86A1 /* LineLowColleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineLowColleController.xib; sourceTree = "<group>"; };
+		18C8FCE01C11BA41004A86A1 /* LineLowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLowCell.h; sourceTree = "<group>"; };
+		18C8FCE11C11BA41004A86A1 /* LineLowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLowCell.m; sourceTree = "<group>"; };
+		18C8FCE21C11BA41004A86A1 /* LineLowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineLowCell.xib; sourceTree = "<group>"; };
 		18F28ED41C07F327001FB5E2 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		18F28ED51C07F327001FB5E2 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
 		710817661BFC674C001B1B6C /* DetailedMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedMode.h; sourceTree = "<group>"; };
@@ -1508,6 +1518,12 @@
 				718BEEAA1C102F4500BAE695 /* GameViewController.h */,
 				718BEEAB1C102F4500BAE695 /* GameViewController.m */,
 				718BEEAC1C102F4500BAE695 /* GameViewController.xib */,
+				18C8FCDB1C11B9F8004A86A1 /* LineLowColleController.h */,
+				18C8FCDC1C11B9F8004A86A1 /* LineLowColleController.m */,
+				18C8FCDD1C11B9F8004A86A1 /* LineLowColleController.xib */,
+				18C8FCE01C11BA41004A86A1 /* LineLowCell.h */,
+				18C8FCE11C11BA41004A86A1 /* LineLowCell.m */,
+				18C8FCE21C11BA41004A86A1 /* LineLowCell.xib */,
 			);
 			name = "更多";
 			sourceTree = "<group>";
@@ -1658,6 +1674,7 @@
 				71578F291BFECEFD004010D7 /* DesignerOneCell.xib in Resources */,
 				188C992F1C06B45A000C0760 /* checkupdate.png in Resources */,
 				71A3BEE11BF1E9A20026870E /* CustomTableViewCell.xib in Resources */,
+				18C8FCDF1C11B9F8004A86A1 /* LineLowColleController.xib in Resources */,
 				188C99311C06B45A000C0760 /* game.png in Resources */,
 				71A3BE311BF1BEFF0026870E /* join_text.png in Resources */,
 				188C991F1C06AD1F000C0760 /* img_tile_design.png in Resources */,
@@ -1686,6 +1703,7 @@
 				18C22D1B1BEB4ECC00BC10DA /* tabbar_item_store.png in Resources */,
 				714ABFF41C006AF000531E81 /* tabbar_item_my_map@2x.png in Resources */,
 				7165EAF31C04908400A7FAFB /* MasterInfoViewController.xib in Resources */,
+				18C8FCE41C11BA41004A86A1 /* LineLowCell.xib in Resources */,
 				718BEE9C1C0FEA2E00BAE695 /* Welcome_3.0_4.png in Resources */,
 				718BEEB01C1032C200BAE695 /* Game_LoclaPlam.png in Resources */,
 				718BEE9A1C0FEA2E00BAE695 /* Welcome_3.0_3.png in Resources */,
@@ -1821,6 +1839,7 @@
 				18816C601C0852C900C9C8DC /* DesignerInfoTableController.m in Sources */,
 				18816C581C082AC600C9C8DC /* MD5DataSigner.m in Sources */,
 				71F4C14E1C0C2A9000B01897 /* OrderTableViewCell.m in Sources */,
+				18C8FCDE1C11B9F8004A86A1 /* LineLowColleController.m in Sources */,
 				71A3BE921BF1E8EA0026870E /* AFURLResponseSerialization.m in Sources */,
 				710817681BFC674C001B1B6C /* DetailedMode.m in Sources */,
 				71A3BE8B1BF1E8EA0026870E /* AFHTTPRequestOperation.m in Sources */,
@@ -1867,6 +1886,7 @@
 				71BAA91B1BFCA55D005E8A51 /* DetailedCommentCell.m in Sources */,
 				71A3BEB01BF1E8EA0026870E /* UIButton+AFNetworking.m in Sources */,
 				71A3BEB31BF1E8EA0026870E /* UIRefreshControl+AFNetworking.m in Sources */,
+				18C8FCE31C11BA41004A86A1 /* LineLowCell.m in Sources */,
 				71A3BE9D1BF1E8EA0026870E /* DBImageRequest.m in Sources */,
 				71A3BE911BF1E8EA0026870E /* AFURLRequestSerialization.m in Sources */,
 				71A3BED61BF1E9A20026870E /* LoginViewController.m in Sources */,
