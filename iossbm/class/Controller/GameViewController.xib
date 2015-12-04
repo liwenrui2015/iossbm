@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="634" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEW-aL-KHJ">
+                    <rect key="frame" x="173" y="84" width="133.5" height="133.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eEW-aL-KHJ" secondAttribute="height" multiplier="1:1" id="tMw-FM-Ypg"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="game_luanshu.png"/>
+                    <connections>
+                        <action selector="gotoLuanshu:" destination="-1" eventType="touchUpInside" id="Q2o-BU-RXj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7S-CL-Dfq">
+                    <rect key="frame" x="327" y="81" width="133" height="139.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="R7S-CL-Dfq" secondAttribute="height" multiplier="95:99" id="oh6-vq-ih0"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="game_jinlin.png"/>
+                    <connections>
+                        <action selector="gotoJinlinxiagu:" destination="-1" eventType="touchUpInside" id="fln-VH-MqQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hs-pb-nj7">
+                    <rect key="frame" x="20" y="84" width="133.5" height="133.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3hs-pb-nj7" secondAttribute="height" multiplier="1:1" id="6PB-FI-MnW"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Game_LoclaPlam.png"/>
+                    <connections>
+                        <action selector="gotoLocalPlan:" destination="-1" eventType="touchUpInside" id="Kbr-va-skl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruq-zk-dco">
+                    <rect key="frame" x="480" y="84" width="133.5" height="133.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ruq-zk-dco" secondAttribute="height" multiplier="1:1" id="y6W-j4-d90"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="game_yazi.png"/>
+                    <connections>
+                        <action selector="gotoFangunyazi:" destination="-1" eventType="touchUpInside" id="hDO-JI-OSh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="洛克星球" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SY-XC-2SH">
+                    <rect key="frame" x="54" y="227.5" width="64" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="乱数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKy-Q2-Edp">
+                    <rect key="frame" x="223" y="227" width="32" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="精灵峡谷" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc0-SG-WhA">
+                    <rect key="frame" x="361" y="230" width="64" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="翻滚吧小鸭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2o-fQ-HH6">
+                    <rect key="frame" x="506" y="227" width="80" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eEW-aL-KHJ" firstAttribute="centerY" secondItem="3hs-pb-nj7" secondAttribute="centerY" id="2s4-bI-Pha"/>
+                <constraint firstItem="Ruq-zk-dco" firstAttribute="centerY" secondItem="3hs-pb-nj7" secondAttribute="centerY" id="8KN-Rh-f0h"/>
+                <constraint firstItem="3hs-pb-nj7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="9zd-LM-KGc"/>
+                <constraint firstAttribute="trailing" secondItem="Ruq-zk-dco" secondAttribute="trailing" constant="20" id="BIG-LC-BnS"/>
+                <constraint firstItem="R7S-CL-Dfq" firstAttribute="leading" secondItem="eEW-aL-KHJ" secondAttribute="trailing" constant="20" id="BYJ-BF-t2S"/>
+                <constraint firstItem="3hs-pb-nj7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="FK4-LF-gbH"/>
+                <constraint firstItem="Ruq-zk-dco" firstAttribute="width" secondItem="3hs-pb-nj7" secondAttribute="width" id="LLe-bY-mds"/>
+                <constraint firstItem="4SY-XC-2SH" firstAttribute="top" secondItem="3hs-pb-nj7" secondAttribute="bottom" constant="10" id="O1V-do-dmi"/>
+                <constraint firstItem="eEW-aL-KHJ" firstAttribute="width" secondItem="3hs-pb-nj7" secondAttribute="width" id="PKK-Qh-E8L"/>
+                <constraint firstItem="K2o-fQ-HH6" firstAttribute="centerX" secondItem="Ruq-zk-dco" secondAttribute="centerX" id="Sfj-n9-mGg"/>
+                <constraint firstItem="4SY-XC-2SH" firstAttribute="centerX" secondItem="3hs-pb-nj7" secondAttribute="centerX" id="a0k-JT-WD6"/>
+                <constraint firstItem="VKy-Q2-Edp" firstAttribute="top" secondItem="eEW-aL-KHJ" secondAttribute="bottom" constant="10" id="dwk-91-jyX"/>
+                <constraint firstItem="cc0-SG-WhA" firstAttribute="centerX" secondItem="R7S-CL-Dfq" secondAttribute="centerX" id="gSa-dV-36d"/>
+                <constraint firstItem="eEW-aL-KHJ" firstAttribute="leading" secondItem="3hs-pb-nj7" secondAttribute="trailing" constant="20" id="jG3-Zc-gwC"/>
+                <constraint firstItem="R7S-CL-Dfq" firstAttribute="width" secondItem="3hs-pb-nj7" secondAttribute="width" id="jVp-zq-NEm"/>
+                <constraint firstItem="VKy-Q2-Edp" firstAttribute="centerX" secondItem="eEW-aL-KHJ" secondAttribute="centerX" id="lnA-4X-QKY"/>
+                <constraint firstItem="Ruq-zk-dco" firstAttribute="leading" secondItem="R7S-CL-Dfq" secondAttribute="trailing" constant="20" id="mH8-yE-F66"/>
+                <constraint firstItem="R7S-CL-Dfq" firstAttribute="centerY" secondItem="3hs-pb-nj7" secondAttribute="centerY" id="nRX-NW-GU2"/>
+                <constraint firstItem="cc0-SG-WhA" firstAttribute="top" secondItem="R7S-CL-Dfq" secondAttribute="bottom" constant="10" id="tzx-dz-8UR"/>
+                <constraint firstItem="K2o-fQ-HH6" firstAttribute="top" secondItem="Ruq-zk-dco" secondAttribute="bottom" constant="10" id="u6b-EK-LNS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="260" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Game_LoclaPlam.png" width="120" height="120"/>
+        <image name="game_jinlin.png" width="122" height="122"/>
+        <image name="game_luanshu.png" width="122" height="122"/>
+        <image name="game_yazi.png" width="122" height="122"/>
+    </resources>
+</document>

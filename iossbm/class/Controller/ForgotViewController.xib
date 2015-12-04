@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgotViewController">
+            <connections>
+                <outlet property="Password" destination="0sq-4R-teV" id="LDa-8w-Q5K"/>
+                <outlet property="UserName" destination="EfA-vr-gup" id="gxG-N1-7Xz"/>
+                <outlet property="notarize" destination="ZSc-M6-bbp" id="0Xr-3K-Xk1"/>
+                <outlet property="security" destination="H6B-cf-NJu" id="Mfe-hG-fmX"/>
+                <outlet property="securityBut" destination="gI7-Qg-dNt" id="PYb-wq-VaA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqT-lZ-f62">
+                    <rect key="frame" x="139" y="90" width="321" height="229"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EfA-vr-gup">
+                            <rect key="frame" x="65" y="36" width="192" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新密码6-20字母和数字组合" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0sq-4R-teV">
+                            <rect key="frame" x="65" y="74" width="192" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码确认" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSc-M6-bbp">
+                            <rect key="frame" x="65" y="112" width="192" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI7-Qg-dNt">
+                            <rect key="frame" x="162" y="150" width="97" height="30"/>
+                            <state key="normal" title="获取验证码">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="getSecurity:" destination="-1" eventType="touchUpInside" id="Rhv-ES-KIG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99x-vO-2pW">
+                            <rect key="frame" x="112" y="191" width="99" height="30"/>
+                            <state key="normal" title="确  定">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="submiteOK:" destination="-1" eventType="touchUpInside" id="ydu-65-Eqy"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H6B-cf-NJu">
+                            <rect key="frame" x="65" y="150" width="97" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="229" id="Ph4-n4-TLz"/>
+                        <constraint firstAttribute="width" constant="321" id="mUH-UK-fcv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TqT-lZ-f62" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="Ay2-VK-S6E"/>
+                <constraint firstAttribute="centerX" secondItem="TqT-lZ-f62" secondAttribute="centerX" id="Z3E-b7-Kzd"/>
+            </constraints>
+            <point key="canvasLocation" x="168" y="-211"/>
+        </view>
+    </objects>
+</document>

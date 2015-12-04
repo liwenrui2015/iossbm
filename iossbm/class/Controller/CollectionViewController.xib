@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionViewController">
+            <connections>
+                <outlet property="collectSegment" destination="K4m-Qw-y0T" id="DJa-jI-rlt"/>
+                <outlet property="collectTableView" destination="ZTd-BP-jH5" id="Lxu-jv-gbV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ZTd-BP-jH5">
+                    <rect key="frame" x="0.0" y="45" width="600" height="555"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TAF-Dn-Pcd"/>
+                        <outlet property="delegate" destination="-1" id="O2v-LV-3fS"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzA-r5-vWm">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="109"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K4m-Qw-y0T">
+                            <rect key="frame" x="8" y="73" width="584" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="dZg-wK-Sk3"/>
+                            </constraints>
+                            <segments>
+                                <segment title="作品收藏"/>
+                                <segment title="店铺收藏"/>
+                            </segments>
+                            <connections>
+                                <action selector="collcetSegmentChang:" destination="-1" eventType="valueChanged" id="lNO-hv-fjH"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="K4m-Qw-y0T" firstAttribute="leading" secondItem="JzA-r5-vWm" secondAttribute="leading" constant="8" id="HcB-BV-DDg"/>
+                        <constraint firstAttribute="bottom" secondItem="K4m-Qw-y0T" secondAttribute="bottom" constant="8" id="W5s-1q-O3h"/>
+                        <constraint firstAttribute="height" constant="109" id="Zch-tO-9Sp"/>
+                        <constraint firstAttribute="trailing" secondItem="K4m-Qw-y0T" secondAttribute="trailing" constant="8" id="iml-3N-CCH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JzA-r5-vWm" secondAttribute="trailing" id="4dV-kS-Isg"/>
+                <constraint firstItem="ZTd-BP-jH5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8HA-be-o5z"/>
+                <constraint firstItem="JzA-r5-vWm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gut-gH-eg6"/>
+                <constraint firstItem="JzA-r5-vWm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Sal-9U-FNE"/>
+                <constraint firstItem="ZTd-BP-jH5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="cvy-Nl-8DM"/>
+                <constraint firstAttribute="bottom" secondItem="ZTd-BP-jH5" secondAttribute="bottom" id="grJ-wP-r4f"/>
+                <constraint firstAttribute="trailing" secondItem="ZTd-BP-jH5" secondAttribute="trailing" id="pP6-Dw-fp0"/>
+            </constraints>
+            <point key="canvasLocation" x="265" y="199"/>
+        </view>
+    </objects>
+</document>

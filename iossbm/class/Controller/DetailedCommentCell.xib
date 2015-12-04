@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="DetailedCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="134.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEq-6S-KiW">
+                        <rect key="frame" x="116" y="42.5" width="215" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.48171164770000002" green="0.48171164770000002" blue="0.48171164770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladoing.png" translatesAutoresizingMaskIntoConstraints="NO" id="O3k-CD-G6n">
+                        <rect key="frame" x="8" y="8" width="92" height="92"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="92" id="DYQ-C8-Y4P"/>
+                            <constraint firstAttribute="width" constant="92" id="dme-Hc-VeV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzS-8l-Zui">
+                        <rect key="frame" x="116" y="14" width="215" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载..." lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZa-Ye-mzD">
+                        <rect key="frame" x="8" y="108" width="323" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAs-ON-Lje">
+                        <rect key="frame" x="282" y="64.5" width="34" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="H6Y-tQ-x9F"/>
+                            <constraint firstAttribute="height" constant="21" id="sIw-hn-jxW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.33362925830000001" blue="0.10294724450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nzS-8l-Zui" firstAttribute="leading" secondItem="ZEq-6S-KiW" secondAttribute="leading" id="8gH-w2-sHq"/>
+                    <constraint firstItem="O3k-CD-G6n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="A7X-dU-rPU"/>
+                    <constraint firstItem="nzS-8l-Zui" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="AsM-9t-cwb"/>
+                    <constraint firstItem="AZa-Ye-mzD" firstAttribute="top" secondItem="O3k-CD-G6n" secondAttribute="bottom" constant="8" id="MQg-42-VzT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AZa-Ye-mzD" secondAttribute="bottom" priority="750" id="SXG-Yp-BvY"/>
+                    <constraint firstItem="OAs-ON-Lje" firstAttribute="top" secondItem="nzS-8l-Zui" secondAttribute="bottom" constant="30" id="TuF-iM-weK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OAs-ON-Lje" secondAttribute="trailing" constant="15" id="YVP-PQ-c2Y"/>
+                    <constraint firstItem="O3k-CD-G6n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Z3I-2J-cIU"/>
+                    <constraint firstItem="nzS-8l-Zui" firstAttribute="leading" secondItem="O3k-CD-G6n" secondAttribute="trailing" constant="16" id="Z8y-uL-yby"/>
+                    <constraint firstItem="AZa-Ye-mzD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ezc-u5-NUu"/>
+                    <constraint firstItem="ZEq-6S-KiW" firstAttribute="top" secondItem="nzS-8l-Zui" secondAttribute="bottom" constant="8" id="jO3-xY-IWc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZEq-6S-KiW" secondAttribute="trailing" id="jZH-kv-iIz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AZa-Ye-mzD" secondAttribute="trailing" id="qZy-Bu-1Yi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nzS-8l-Zui" secondAttribute="trailing" id="vEo-mT-dlW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commemtInfo" destination="AZa-Ye-mzD" id="8lu-YO-TMS"/>
+                <outlet property="commentImage" destination="O3k-CD-G6n" id="7xJ-Ve-S1Q"/>
+                <outlet property="commentName" destination="nzS-8l-Zui" id="XnU-1M-ZF8"/>
+                <outlet property="commentTime" destination="ZEq-6S-KiW" id="vtf-b2-tco"/>
+                <outlet property="commentType" destination="OAs-ON-Lje" id="kYh-dy-Xtd"/>
+            </connections>
+            <point key="canvasLocation" x="330.5" y="165.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ladoing.png" width="300" height="300"/>
+    </resources>
+</document>

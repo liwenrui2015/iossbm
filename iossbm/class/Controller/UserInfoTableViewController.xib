@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserInfoTableViewController">
+            <connections>
+                <outlet property="couponCell" destination="mkK-mn-p6P" id="JBz-vX-reJ"/>
+                <outlet property="deviseCell" destination="zW0-6t-cvo" id="yLf-h4-b3S"/>
+                <outlet property="enshrineCell" destination="clR-ZE-FCU" id="PQK-V5-FL1"/>
+                <outlet property="myMsgCell" destination="wsI-4V-I1C" id="UZL-Kv-xjW"/>
+                <outlet property="orderFromCell" destination="cbK-m9-AcE" id="5wq-io-L5Q"/>
+                <outlet property="passWordCell" destination="Qcz-tW-1Tg" id="io7-Sv-xhw"/>
+                <outlet property="shearCell" destination="lQr-SP-8PN" id="YvY-KK-84t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
+                <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
+            </connections>
+        </tableView>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lQr-SP-8PN">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lQr-SP-8PN" id="91m-GQ-ynL">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tile_share.png" translatesAutoresizingMaskIntoConstraints="NO" id="mmL-LD-xL3">
+                        <rect key="frame" x="13" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4Jw-Ra-O2N"/>
+                            <constraint firstAttribute="width" constant="30" id="WAh-Ml-sey"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goin.png" translatesAutoresizingMaskIntoConstraints="NO" id="bD4-ev-Hjf">
+                        <rect key="frame" x="263" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="7u6-Mt-GRo"/>
+                            <constraint firstAttribute="height" constant="44" id="GAQ-dn-MiI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFE-VA-RPZ">
+                        <rect key="frame" x="63" y="11" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="PFE-VA-RPZ" secondAttribute="centerY" id="Tvw-in-ahn"/>
+                    <constraint firstAttribute="centerY" secondItem="bD4-ev-Hjf" secondAttribute="centerY" id="dy3-D9-tOO"/>
+                    <constraint firstItem="PFE-VA-RPZ" firstAttribute="leading" secondItem="91m-GQ-ynL" secondAttribute="leadingMargin" constant="55" id="nMD-6Z-dRy"/>
+                    <constraint firstAttribute="centerY" secondItem="mmL-LD-xL3" secondAttribute="centerY" id="nY1-c7-11o"/>
+                    <constraint firstItem="mmL-LD-xL3" firstAttribute="leading" secondItem="91m-GQ-ynL" secondAttribute="leadingMargin" constant="5" id="wll-Zo-HpW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bD4-ev-Hjf" secondAttribute="trailing" constant="5" id="znO-cc-JTj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="263" y="838"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mkK-mn-p6P">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mkK-mn-p6P" id="6jA-ZQ-6UE">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goin.png" translatesAutoresizingMaskIntoConstraints="NO" id="C0t-Wy-R4q">
+                        <rect key="frame" x="263" y="-0.5" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="K81-rz-bGr"/>
+                            <constraint firstAttribute="height" constant="44" id="j4d-qG-uI8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠卷" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bx-cC-kX5">
+                        <rect key="frame" x="63" y="11" width="51" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tile_coupon.png" translatesAutoresizingMaskIntoConstraints="NO" id="O0r-WV-AzS">
+                        <rect key="frame" x="13" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="NTc-KQ-gQ9"/>
+                            <constraint firstAttribute="height" constant="30" id="tz0-mz-TaR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="C0t-Wy-R4q" secondAttribute="centerY" id="15l-qS-wz1"/>
+                    <constraint firstItem="2bx-cC-kX5" firstAttribute="leading" secondItem="6jA-ZQ-6UE" secondAttribute="leadingMargin" constant="55" id="GvO-n2-2Rd"/>
+                    <constraint firstItem="O0r-WV-AzS" firstAttribute="leading" secondItem="6jA-ZQ-6UE" secondAttribute="leadingMargin" constant="5" id="KVV-AK-q7p"/>
+                    <constraint firstAttribute="centerY" secondItem="2bx-cC-kX5" secondAttribute="centerY" id="ozB-Ct-kMc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="C0t-Wy-R4q" secondAttribute="trailing" constant="5" id="tt3-pe-Lg1"/>
+                    <constraint firstAttribute="centerY" secondItem="O0r-WV-AzS" secondAttribute="centerY" id="wvJ-X9-ajh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="263" y="923"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cbK-m9-AcE">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cbK-m9-AcE" id="r2G-ap-nFK">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ima_tile_order.png" translatesAutoresizingMaskIntoConstraints="NO" id="vZk-dG-pkj">
+                        <rect key="frame" x="13" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="aLc-34-l0u"/>
+                            <constraint firstAttribute="height" constant="30" id="vv3-TY-umA"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goin.png" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-cK-Q0t">
+                        <rect key="frame" x="263" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="C3g-0Y-Xq2"/>
+                            <constraint firstAttribute="height" constant="44" id="VKb-3y-eV1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的订单" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otx-gH-LuO">
+                        <rect key="frame" x="63" y="11" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="otx-gH-LuO" secondAttribute="centerY" id="J94-O7-tXp"/>
+                    <constraint firstAttribute="centerY" secondItem="vZk-dG-pkj" secondAttribute="centerY" id="K9n-XL-WtS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7RG-cK-Q0t" secondAttribute="trailing" constant="5" id="X9n-O5-0zw"/>
+                    <constraint firstItem="vZk-dG-pkj" firstAttribute="leading" secondItem="r2G-ap-nFK" secondAttribute="leadingMargin" constant="5" id="XfO-ex-giA"/>
+                    <constraint firstAttribute="centerY" secondItem="7RG-cK-Q0t" secondAttribute="centerY" id="uEr-yL-YXN"/>
+                    <constraint firstItem="otx-gH-LuO" firstAttribute="leading" secondItem="r2G-ap-nFK" secondAttribute="leadingMargin" constant="55" id="ufq-dl-BIW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="263" y="1014"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wsI-4V-I1C">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wsI-4V-I1C" id="8B5-TO-1nr">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tile_information.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHs-rO-Tfs">
+                        <rect key="frame" x="13" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="MCf-tx-bY3"/>
+                            <constraint firstAttribute="width" constant="30" id="Yfo-Zf-qVe"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goin.png" translatesAutoresizingMaskIntoConstraints="NO" id="WFL-UJ-Xma">
+                        <rect key="frame" x="263" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="3qy-WP-5y3"/>
+                            <constraint firstAttribute="height" constant="44" id="elS-jO-Xcx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的消息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzF-Ga-8oN">
+                        <rect key="frame" x="63" y="11" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="gHs-rO-Tfs" secondAttribute="centerY" id="CIo-nt-HOq"/>
+                    <constraint firstItem="gHs-rO-Tfs" firstAttribute="leading" secondItem="8B5-TO-1nr" secondAttribute="leadingMargin" constant="5" id="Ymr-27-xuI"/>
+                    <constraint firstItem="YzF-Ga-8oN" firstAttribute="leading" secondItem="8B5-TO-1nr" secondAttribute="leadingMargin" constant="55" id="cow-JF-dX6"/>
+                    <constraint firstAttribute="centerY" secondItem="WFL-UJ-Xma" secondAttribute="centerY" id="eCy-Mh-SHb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WFL-UJ-Xma" secondAttribute="trailing" constant="5" id="iGH-6l-ElN"/>
+                    <constraint firstAttribute="centerY" secondItem="YzF-Ga-8oN" secondAttribute="centerY" id="toF-8p-sLi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="259" y="1102"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="clR-ZE-FCU">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="clR-ZE-FCU" id="db5-xW-FQV">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goin.png" translatesAutoresizingMaskIntoConstraints="NO" id="52O-Y5-ITG">
+                        <rect key="frame" x="263" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="VNb-dN-1hj"/>
+                            <constraint firstAttribute="height" constant="44" id="VPv-FW-vEL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的收藏" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tms-fj-6fF">
+                        <rect key="frame" x="63" y="11" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="AMe-de-PcA"/>
+                            <constraint firstAttribute="width" constant="44" id="bh1-ng-I3s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AMe-de-PcA"/>
+                                <exclude reference="bh1-ng-I3s"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tile_cang.png" translatesAutoresizingMaskIntoConstraints="NO" id="rUg-I0-twI">
+                        <rect key="frame" x="13" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="R5A-am-2ar"/>
+                            <constraint firstAttribute="width" constant="30" id="RBa-QL-2U7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="52O-Y5-ITG" secondAttribute="centerY" id="1a7-o2-Gtw"/>
+                    <constraint firstItem="rUg-I0-twI" firstAttribute="leading" secondItem="db5-xW-FQV" secondAttribute="leadingMargin" constant="5" id="7ef-uB-yoc"/>
+                    <constraint firstAttribute="centerY" secondItem="Tms-fj-6fF" secondAttribute="centerY" id="EP1-5q-kLQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="52O-Y5-ITG" secondAttribute="trailing" constant="5" id="GfQ-Dg-EX2"/>
+                    <constraint firstItem="Tms-fj-6fF" firstAttribute="leading" secondItem="db5-xW-FQV" secondAttribute="leadingMargin" constant="55" id="f4v-Ry-Ngm"/>
+                    <constraint firstAttribute="centerY" secondItem="rUg-I0-twI" secondAttribute="centerY" id="q46-MW-dU0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="251" y="1175"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zW0-6t-cvo">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zW0-6t-cvo" id="Osg-7w-0y5">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tile_design.png" translatesAutoresizingMaskIntoConstraints="NO" id="mvs-4a-pji">
+                        <rect key="frame" x="13" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="jk7-1W-X9O"/>
+                            <constraint firstAttribute="height" constant="30" id="yg4-Zx-zEK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的设计" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7za-ab-ivG">
+                        <rect key="frame" x="63" y="11" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goin.png" translatesAutoresizingMaskIntoConstraints="NO" id="qmj-7d-cfb">
+                        <rect key="frame" x="263" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Rl9-Mc-uPD"/>
+                            <constraint firstAttribute="width" constant="44" id="qyW-W0-niR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="mvs-4a-pji" secondAttribute="centerY" id="J80-KZ-czz"/>
+                    <constraint firstAttribute="centerY" secondItem="qmj-7d-cfb" secondAttribute="centerY" id="VsI-vI-LhR"/>
+                    <constraint firstAttribute="centerY" secondItem="7za-ab-ivG" secondAttribute="centerY" id="dOt-BW-EME"/>
+                    <constraint firstItem="mvs-4a-pji" firstAttribute="leading" secondItem="Osg-7w-0y5" secondAttribute="leadingMargin" constant="5" id="eja-2r-8dp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qmj-7d-cfb" secondAttribute="trailing" constant="5" id="qEG-gR-5kw"/>
+                    <constraint firstItem="7za-ab-ivG" firstAttribute="leading" secondItem="Osg-7w-0y5" secondAttribute="leadingMargin" constant="55" id="qeb-FM-OSO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="251" y="1260"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Qcz-tW-1Tg">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qcz-tW-1Tg" id="9gQ-fx-8Dl">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goin.png" translatesAutoresizingMaskIntoConstraints="NO" id="bnW-Gl-wg0">
+                        <rect key="frame" x="263" y="-0.5" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="gOP-Dk-Sm2"/>
+                            <constraint firstAttribute="height" constant="44" id="zFT-sN-hfe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="修改密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qP-nb-g3o">
+                        <rect key="frame" x="63" y="11" width="68" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tile_chang_password.png" translatesAutoresizingMaskIntoConstraints="NO" id="cmJ-Hr-2Fc">
+                        <rect key="frame" x="13" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="3I4-7V-D9p"/>
+                            <constraint firstAttribute="height" constant="30" id="NrR-Ln-Ohn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="bnW-Gl-wg0" secondAttribute="trailing" constant="5" id="EMz-AI-mq0"/>
+                    <constraint firstAttribute="centerY" secondItem="7qP-nb-g3o" secondAttribute="centerY" id="Hu5-7h-moR"/>
+                    <constraint firstItem="7qP-nb-g3o" firstAttribute="leading" secondItem="9gQ-fx-8Dl" secondAttribute="leadingMargin" constant="55" id="PK9-td-fHd"/>
+                    <constraint firstAttribute="centerY" secondItem="bnW-Gl-wg0" secondAttribute="centerY" id="QG8-4B-2Xb"/>
+                    <constraint firstAttribute="centerY" secondItem="cmJ-Hr-2Fc" secondAttribute="centerY" id="VOf-Kw-sLj"/>
+                    <constraint firstItem="cmJ-Hr-2Fc" firstAttribute="leading" secondItem="9gQ-fx-8Dl" secondAttribute="leadingMargin" constant="5" id="bPy-b4-AFx"/>
+                    <constraint firstItem="7qP-nb-g3o" firstAttribute="leading" secondItem="cmJ-Hr-2Fc" secondAttribute="trailing" constant="55" id="pOi-V1-7MS"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="pOi-V1-7MS"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="251" y="1347"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="goin.png" width="60" height="60"/>
+        <image name="ima_tile_order.png" width="60" height="60"/>
+        <image name="img_tile_cang.png" width="60" height="60"/>
+        <image name="img_tile_chang_password.png" width="60" height="60"/>
+        <image name="img_tile_coupon.png" width="60" height="60"/>
+        <image name="img_tile_design.png" width="60" height="60"/>
+        <image name="img_tile_information.png" width="60" height="60"/>
+        <image name="img_tile_share.png" width="60" height="60"/>
+    </resources>
+</document>
