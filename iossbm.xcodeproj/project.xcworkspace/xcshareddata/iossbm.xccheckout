@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>489474CC-85F9-4B7D-AB7D-5883BA72D0C8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iossbm</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>284d5d8d-7dca-0410-9587-35d6f6b40d03++6822</key>
+		<string>http://wiki.yolema.com:81/svn/ios/trunk/IYLM%25E9%25A1%25B9%25E7%259B%25AE%25E4%25BB%25A3%25E7%25A0%2581/IYLM/IYLM/Public/CustomMapCalloutView</string>
+		<key>A72823E598C200C14E2E6164ED4581D97DFC21BC</key>
+		<string>https://github.com/liwenrui2015/iossbm.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iossbm.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>284d5d8d-7dca-0410-9587-35d6f6b40d03++6822</key>
+		<string>../..iossbm/class/CustomMapCalloutView/</string>
+		<key>A72823E598C200C14E2E6164ED4581D97DFC21BC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>284d5d8d-7dca-0410-9587-35d6f6b40d03++6822</key>
+		<string>http://wiki.yolema.com:81/svn/ios</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/liwenrui2015/iossbm.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A72823E598C200C14E2E6164ED4581D97DFC21BC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>284d5d8d-7dca-0410-9587-35d6f6b40d03++6822</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CustomMapCalloutView</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A72823E598C200C14E2E6164ED4581D97DFC21BC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iossbm</string>
+		</dict>
+	</array>
+</dict>
+</plist>

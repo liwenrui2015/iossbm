@@ -12,6 +12,7 @@
 #import "AboutMeViewController.h"
 #import "GameViewController.h"
 #import "FeedbackViewController.h"
+#import "LineLowColleController.h"
 #import "commonTools.h"
 @interface MoerTableViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *headerView;
@@ -192,6 +193,9 @@
     }
     else if(indexPath.section==0&&indexPath.row==3)
     {
+        LineLowColleController * lineController = [[LineLowColleController alloc]initWithNibName:@"LineLowColleController" bundle:nil];
+        [self.navigationController pushViewController:lineController animated:YES];
+        
         NSLog(@"线下体验店");
     }
     else if(indexPath.section==0&&indexPath.row==4)
@@ -205,7 +209,7 @@
     else if(indexPath.section==1&&indexPath.row==0)
     {
         NSLog(@"联系客服");
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://13924087548"]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://40088116618"]];
     }
     else if(indexPath.section==2&&indexPath.row==0)
     {
