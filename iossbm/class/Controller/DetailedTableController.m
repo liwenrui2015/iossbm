@@ -16,13 +16,12 @@
 #import <MediaPlayer/MediaPlayer.h>
 //#import <AVFoundation/AVFoundation.h>
 
-@interface DetailedTableController ()
+@interface DetailedTableController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *headImage;
 @property (weak, nonatomic) IBOutlet UILabel *headName;
 @property (weak, nonatomic) IBOutlet UILabel *headTime;
 @property (weak, nonatomic) IBOutlet UILabel *headTitle;
 @property (strong, nonatomic) IBOutlet UITableViewCell *headCell;
-@property (strong, nonatomic) IBOutlet UIView *PlayerView;
 @property (strong, nonatomic) IBOutlet UITableViewCell *secondHead;
 @property (strong, nonatomic) IBOutlet UITableViewCell *endCell;
 ///评论的内容
@@ -32,6 +31,12 @@
 @end
 
 @implementation DetailedTableController
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    [self.view endEditing:YES];
+    
+}
+
 static NSString*CellTextId =@"InfoTextCell";
 static NSString*CellImageId =@"DetailedImageCell";
 static NSString*CommentIdentifer =@"DetailedCommentCell";
@@ -155,7 +160,7 @@ static NSString*CommentIdentifer =@"DetailedCommentCell";
 {
     if(section==0)
     {
-        return self.PlayerView;
+        return nil;
     }else
     {
         return self.secondHead;
@@ -178,7 +183,7 @@ static NSString*CommentIdentifer =@"DetailedCommentCell";
         else
         {
             DetailedImageCell * cell  = [tableView dequeueReusableCellWithIdentifier:CellImageId forIndexPath:indexPath];
-            
+
             NSLog(@"图片路径是：%@",[NSString stringWithFormat:@"%@%@",IP,[self.arrayData objectAtIndex:indexPath.row-1]]);
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",IP,[self.arrayData objectAtIndex:indexPath.row-1]]]];
@@ -272,21 +277,21 @@ static NSString*CommentIdentifer =@"DetailedCommentCell";
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    if(self.selfMode.CellType==3)//2是视频
-    {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            MPMoviePlayerViewController *movie = [[MPMoviePlayerViewController alloc]initWithContentURL:[NSURL URLWithString:@"http://192.168.1.117:3000/images/jiqimao001.mp4"]];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [movie.moviePlayer prepareToPlay];
-                [self presentMoviePlayerViewControllerAnimated:movie];
-                movie.moviePlayer.controlStyle= MPMovieControlStyleEmbedded;
-                movie.moviePlayer.scalingMode=MPMovieScalingModeAspectFill;
-                [movie.view setBackgroundColor:[UIColor clearColor]];
-                [movie.view setFrame:self.PlayerView.frame];
-                [self.PlayerView addSubview:movie.view];
-            });
-        });
-    }
+//    if(self.selfMode.CellType==3)//2是视频
+//    {
+//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//            MPMoviePlayerViewController *movie = [[MPMoviePlayerViewController alloc]initWithContentURL:[NSURL URLWithString:@"http://192.168.1.117:3000/images/jiqimao001.mp4"]];
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [movie.moviePlayer prepareToPlay];
+//                [self presentMoviePlayerViewControllerAnimated:movie];
+//                movie.moviePlayer.controlStyle= MPMovieControlStyleEmbedded;
+//                movie.moviePlayer.scalingMode=MPMovieScalingModeAspectFill;
+//                [movie.view setBackgroundColor:[UIColor clearColor]];
+//                [movie.view setFrame:self.PlayerView.frame];
+//                [self.PlayerView addSubview:movie.view];
+//            });
+//        });
+//    }
     //    NSLog(@"%@",self.arrayData);
 }
 

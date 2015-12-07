@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9060"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -10,7 +10,6 @@
             <connections>
                 <outlet property="DesignInfoCell" destination="xoe-fQ-lRi" id="2U6-AZ-wGX"/>
                 <outlet property="contentCell" destination="zbS-4h-SGz" id="RD2-LJ-8sD"/>
-                <outlet property="contentCountCell" destination="5PS-KX-nD3" id="T5c-Ar-dFt"/>
                 <outlet property="contentTextView" destination="viT-s5-DKr" id="Ab6-kB-cVl"/>
                 <outlet property="contentType" destination="3P1-1Y-an3" id="gup-3T-B8v"/>
                 <outlet property="pesonalCell" destination="h55-oa-Uvp" id="ktp-a6-qMM"/>
@@ -48,54 +47,77 @@
                         </segments>
                     </segmentedControl>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viT-s5-DKr">
-                        <rect key="frame" x="8" y="46" width="304" height="60"/>
-                        <color key="backgroundColor" red="1" green="0.75776484740000005" blue="0.23691128310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="8" y="48.5" width="304" height="60"/>
+                        <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="wye-5x-KKV"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" white="0.15571032072368421" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </textView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdc-iX-bK8">
-                        <rect key="frame" x="40" y="114" width="240" height="41"/>
+                        <rect key="frame" x="40" y="116" width="240" height="41"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AC-cp-tQ3">
                                 <rect key="frame" x="172" y="6" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GY5-og-59N"/>
                                     <constraint firstAttribute="width" constant="60" id="v9E-kj-05G"/>
                                 </constraints>
-                                <state key="normal" title="提交"/>
+                                <state key="normal" title="提交">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="submitOK:" destination="-1" eventType="touchUpInside" id="tqn-mc-jnq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-dH-wNg">
-                                <rect key="frame" x="8" y="6" width="57" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="3sJ-dO-OYR"/>
-                                    <constraint firstAttribute="width" constant="57" id="bJG-zh-B0w"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-dH-wNg">
+                                <rect key="frame" x="8" y="6" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="取消"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="dismissKeyboard:" destination="-1" eventType="touchUpInside" id="SMh-Xs-WJo"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.38525972809999998" blue="0.2628510919" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="rSI-dH-wNg" firstAttribute="top" secondItem="rdc-iX-bK8" secondAttribute="top" constant="6" id="AjU-JO-oGX"/>
                             <constraint firstAttribute="width" constant="240" id="Hx6-dh-vyb"/>
                             <constraint firstItem="6AC-cp-tQ3" firstAttribute="top" secondItem="rdc-iX-bK8" secondAttribute="top" constant="6" id="Inl-wt-wbR"/>
                             <constraint firstAttribute="trailing" secondItem="6AC-cp-tQ3" secondAttribute="trailing" constant="8" id="Jhn-ek-4DQ"/>
                             <constraint firstItem="rSI-dH-wNg" firstAttribute="leading" secondItem="rdc-iX-bK8" secondAttribute="leading" constant="8" id="Jvl-bp-rG3"/>
+                            <constraint firstItem="rSI-dH-wNg" firstAttribute="width" secondItem="6AC-cp-tQ3" secondAttribute="width" id="XKW-U5-GhO"/>
                             <constraint firstAttribute="height" constant="41" id="ftn-Yt-6GG"/>
+                            <constraint firstItem="rSI-dH-wNg" firstAttribute="height" secondItem="6AC-cp-tQ3" secondAttribute="height" id="i0a-J3-Oct"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="rdc-iX-bK8" secondAttribute="bottom" priority="750" id="66n-l0-knR"/>
-                    <constraint firstItem="viT-s5-DKr" firstAttribute="top" secondItem="3P1-1Y-an3" secondAttribute="bottom" constant="8" id="Czp-eT-o4k"/>
+                    <constraint firstItem="viT-s5-DKr" firstAttribute="top" secondItem="3P1-1Y-an3" secondAttribute="bottom" constant="10" id="Czp-eT-o4k"/>
                     <constraint firstAttribute="trailingMargin" secondItem="viT-s5-DKr" secondAttribute="trailing" id="Lln-hM-NgI"/>
                     <constraint firstAttribute="leadingMargin" secondItem="viT-s5-DKr" secondAttribute="leading" id="Oo5-kX-noA"/>
                     <constraint firstAttribute="trailingMargin" secondItem="3P1-1Y-an3" secondAttribute="trailing" id="ZrD-C2-68C"/>
@@ -105,7 +127,7 @@
                     <constraint firstItem="rdc-iX-bK8" firstAttribute="centerX" secondItem="oLb-oi-1dl" secondAttribute="centerX" id="xNA-p2-Huu"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="316" y="568"/>
+            <point key="canvasLocation" x="316" y="542"/>
         </tableViewCell>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="yVL-vE-mHA">
             <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
@@ -191,42 +213,6 @@
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="316" y="304.5"/>
-        </tableViewCell>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="5PS-KX-nD3">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
-            <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5PS-KX-nD3" id="dso-f8-tL9">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg3-Po-F7y">
-                        <rect key="frame" x="96" y="39" width="30" height="30"/>
-                        <state key="normal" title="好评"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cs-N6-g7H">
-                        <rect key="frame" x="178" y="39" width="30" height="30"/>
-                        <state key="normal" title="中评"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OK5-0F-KfV">
-                        <rect key="frame" x="251" y="39" width="30" height="30"/>
-                        <state key="normal" title="差评"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXW-lq-rPf">
-                        <rect key="frame" x="19" y="39" width="34" height="30"/>
-                        <state key="normal" title="全部"/>
-                    </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnS-13-BZG">
-                        <rect key="frame" x="8" y="7" width="45" height="24"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Or9-6P-2v9">
-                        <rect key="frame" x="70" y="10" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                </subviews>
-            </tableViewCellContentView>
-            <point key="canvasLocation" x="324" y="417"/>
         </tableViewCell>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="h55-oa-Uvp">
             <rect key="frame" x="0.0" y="0.0" width="343" height="144"/>

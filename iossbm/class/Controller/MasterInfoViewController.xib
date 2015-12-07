@@ -96,14 +96,20 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDx-aT-cma">
                                     <rect key="frame" x="380" y="712" width="60" height="30"/>
-                                    <color key="backgroundColor" red="1" green="0.75776484740000005" blue="0.23691128310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="60" id="3Zr-KU-D22"/>
                                         <constraint firstAttribute="height" constant="30" id="OZH-hD-BrX"/>
                                     </constraints>
                                     <state key="normal" title="预约">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="gotoBespoke:" destination="-1" eventType="touchUpInside" id="D4P-mM-Atk"/>
                                     </connections>

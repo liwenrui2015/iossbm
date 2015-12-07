@@ -8,7 +8,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailedTableController">
             <connections>
-                <outlet property="PlayerView" destination="ocg-tw-sEP" id="u1h-hl-yXX"/>
                 <outlet property="commentText" destination="fly-AS-7aO" id="iIC-Cu-dGy"/>
                 <outlet property="endCell" destination="qjM-QK-YeX" id="099-tC-t6I"/>
                 <outlet property="headCell" destination="3Xb-Jq-ahV" id="OtJ-1Y-Vva"/>
@@ -45,13 +44,19 @@
                     </textField>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQa-Gb-hbh">
                         <rect key="frame" x="238" y="8" width="58" height="30.5"/>
-                        <color key="backgroundColor" red="0.81056529071626149" green="1" blue="0.98597055120730681" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="58" id="IXt-Ux-CoW"/>
                         </constraints>
                         <state key="normal" title="评论">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <action selector="SendComment:" destination="-1" eventType="touchUpInside" id="Bca-5j-oxs"/>
                         </connections>
@@ -119,13 +124,6 @@
             </tableViewCellContentView>
             <point key="canvasLocation" x="-253" y="-42.5"/>
         </tableViewCell>
-        <view contentMode="scaleToFill" id="ocg-tw-sEP">
-            <rect key="frame" x="0.0" y="0.0" width="408" height="160"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" red="0.1746962051" green="0.27509525940000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-85" y="-563"/>
-        </view>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="8a6-yj-2rx">
             <rect key="frame" x="0.0" y="0.0" width="415" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
