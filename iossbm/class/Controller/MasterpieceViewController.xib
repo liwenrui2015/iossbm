@@ -46,9 +46,19 @@
                         <action selector="changSegment:" destination="-1" eventType="valueChanged" id="dJD-c6-Ukm"/>
                     </connections>
                 </segmentedControl>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="semg_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="lTz-Ld-dKu">
+                    <rect key="frame" x="545" y="72" width="47" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="Ad3-wh-7qn"/>
+                        <constraint firstAttribute="height" constant="29" id="Ud5-bG-BTS"/>
+                    </constraints>
+                </imageView>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hD-bz-k8l">
                     <rect key="frame" x="543" y="72" width="51" height="31"/>
-                    <color key="backgroundColor" red="0.25882352941176473" green="0.83137254901960789" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="PJ6-iy-Vms"/>
+                        <constraint firstAttribute="height" constant="31" id="sah-7O-gRk"/>
+                    </constraints>
                     <connections>
                         <action selector="changSwitch:" destination="-1" eventType="valueChanged" id="vu8-0v-dVs"/>
                     </connections>
@@ -79,9 +89,13 @@
                 <constraint firstItem="QE4-IX-xFd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="9mo-zC-vHK"/>
                 <constraint firstAttribute="bottom" secondItem="fID-Ec-RD1" secondAttribute="bottom" constant="49" id="Ahs-bl-B7j"/>
                 <constraint firstItem="pCz-TS-2Re" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="ChX-uq-GCf"/>
+                <constraint firstItem="lTz-Ld-dKu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="G5h-Ou-aW9"/>
                 <constraint firstItem="fID-Ec-RD1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HOB-LH-puC"/>
                 <constraint firstItem="4hD-bz-k8l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="Mly-lB-a6j"/>
                 <constraint firstAttribute="trailing" secondItem="fID-Ec-RD1" secondAttribute="trailing" id="RP9-NS-tfl"/>
+                <constraint firstItem="4hD-bz-k8l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="SWf-m3-oee"/>
+                <constraint firstAttribute="trailing" secondItem="4hD-bz-k8l" secondAttribute="trailing" constant="8" id="Wbg-mW-bI0"/>
+                <constraint firstAttribute="trailing" secondItem="lTz-Ld-dKu" secondAttribute="trailing" constant="8" id="emL-rE-cSj"/>
                 <constraint firstItem="fID-Ec-RD1" firstAttribute="top" secondItem="pCz-TS-2Re" secondAttribute="bottom" constant="10" id="kgb-6T-5AB"/>
                 <constraint firstAttribute="trailing" secondItem="rPA-Lw-0CZ" secondAttribute="trailing" constant="15" id="kmP-d9-E9l"/>
                 <constraint firstItem="rPA-Lw-0CZ" firstAttribute="leading" secondItem="QE4-IX-xFd" secondAttribute="trailing" constant="9" id="mNA-Vx-ieL"/>
@@ -91,4 +105,7 @@
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="semg_bg.png" width="51" height="31"/>
+    </resources>
 </document>

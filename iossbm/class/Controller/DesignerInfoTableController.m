@@ -23,7 +23,6 @@
 @property (strong, nonatomic) IBOutlet UITableViewCell *pesonalCell;
 @property (strong, nonatomic) IBOutlet UITableViewCell *shopCell;
 @property (strong, nonatomic) IBOutlet UITableViewCell *DesignInfoCell;
-@property (strong, nonatomic) IBOutlet UITableViewCell *contentCountCell;
 @property (strong, nonatomic) IBOutlet UITableViewCell *contentCell;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *contentType;
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView;
@@ -74,9 +73,9 @@ static NSString * DesCommentCell =@"DesCommentCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"详情";
-
      self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"收藏" style:UIBarButtonItemStyleDone target:self action:@selector(collectBut:)];
     
+    self.tableView.estimatedRowHeight=44;
     
     [self disablesAutomaticKeyboardDismissal];
     UINib * nib = [UINib nibWithNibName:@"DesInfoTableViewCell" bundle:nil];
